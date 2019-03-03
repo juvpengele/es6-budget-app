@@ -1,0 +1,122 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Budget app</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/app.css">
+        <link rel="stylesheet" href="/assets/snackbar.css">
+
+        <style>
+            * {
+                font-family: 'Montserrat', sans-serif;
+            }
+            .budget--icon { font-size: 20px; }
+            .budget--icon:hover { text-decoration: none;}
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Budget app</a>
+    </nav>
+    <div class="container">
+        <div class="my-4">
+            <h2 class="text-center">Budget application</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-success" style="max-width: 20rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">FCFA</h3>
+                        <h2 class="text-center" id="totalEarning">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light" style="max-width: 20rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-black">FCFA</h3>
+                        <h2 class="text-center text-black" id="totalBudget">0</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-danger" style="max-width: 20rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">FCFA</h3>
+                        <h2 class="text-center" id="totalExpense">0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <ul class="list-group" id="earning-list">
+
+                    </ul>
+                </div>
+
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h3 class="text-success">Revenus</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="" id="earning-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"
+                                    id="earning-form-title"
+                                       placeholder="Entrez la source de révenu">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control"
+                                   id="earning-form-amount"
+                                   aria-describedby="emailHelp" placeholder="Entrez le montant">
+                            </div>
+                            <button type="submit" class="btn btn-outline-success">Ajouter <i class="fa fa-plus"></i></button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <ul class="list-group" id="expense-list">
+
+                    </ul>
+                </div>
+
+                <div class="card border-light mb-3">
+                    <div class="card-header">
+                        <h3 class="text-danger">Dépenses</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="" id="expense-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"
+                                   id="expense-form-title"
+                                   placeholder="Entrez la nom de dépense">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control"
+                                   id="expense-form-amount"
+                                   aria-describedby="emailHelp" placeholder="Entrez le montant">
+                            </div>
+                            <button type="submit" class="btn btn-outline-danger">Ajouter <i class="fa fa-plus"></i></button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/app.js"></script>
+</body>
+</html>

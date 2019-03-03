@@ -1,0 +1,22 @@
+{
+  "name": "es6-budget-app",
+  "version": "1.0.0",
+  "description": "A budget app built with ES6 without a framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-snackbar": "^0.1.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
